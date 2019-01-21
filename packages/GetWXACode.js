@@ -22,7 +22,7 @@ const GetWXACode = async (dir) => {
     const code = await GetBinaryCode(access_token, path)
     fs.writeFileSync(`${name}.png`, code)
     Spinner.stop()
-    console.log(`\n ${chalk.green(`Successfully，See ${name}.png！ \n`)}`)
+    console.log(`\n ${chalk.green(`Successfully，see ${name}.png ！ \n`)}`)
 }
 
 module.exports = GetWXACode
